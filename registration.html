@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PeerPulse - Registration</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <h1>PeerPulse</h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="browse.html">Browse Tutors</a>
+
+            <a href="sessions.html">My Sessions</a>
+
+            <a href="profile.html">Your Profile</a>
+
+            <a href="registration.html">Register</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Registration Section -->
+
+    <main>
+
+        <h1>Create Your Account</h1>
+
+        <p>
+            Join PeerPulse and start learning or teaching
+            with fellow students.
+        </p>
+
+
+        <form action="#" method="post">
+
+            <!-- Personal Information -->
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                placeholder="Enter your full name" required>
+
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                min="13" max="100" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile"
+                placeholder="Enter your mobile number" required>
+
+                <br><br>
+
+                <label for="qualification">Current Qualification:</label>
+
+                <select id="qualification" name="qualification">
+
+                    <option value="">Select Qualification</option>
+                    <option value="school">School Student</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <!-- Account Role -->
+
+            <fieldset>
+
+                <legend>Choose Your Role</legend>
+
+                <p>You can select one or both options.</p>
+
+                <input type="checkbox" id="student"
+                name="role" value="student">
+
+                <label for="student">Student (I want to learn)</label>
+
+                <br><br>
+
+                <input type="checkbox" id="tutor"
+                name="role" value="tutor">
+
+                <label for="tutor">Tutor (I want to teach)</label>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <!-- Learning Information -->
+
+            <fieldset>
+
+                <legend>Learning Information</legend>
+
+                <label for="learning">Skills You Want to Learn:</label>
+
+                <br><br>
+
+                <textarea id="learning" name="learning"
+                rows="4" cols="40"
+                placeholder="Example: Python, Web Development, Mathematics"></textarea>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <!-- Teaching Information -->
+
+            <fieldset>
+
+                <legend>Teaching Information</legend>
+
+                <label for="teaching">Skills You Can Teach:</label>
+
+                <br><br>
+
+                <textarea id="teaching" name="teaching"
+                rows="4" cols="40"
+                placeholder="Example: C++, Python, Electronics, Mathematics"></textarea>
+
+                <br><br>
+
+                <label for="experience">Teaching Experience:</label>
+
+                <select id="experience" name="experience">
+
+                    <option value="">Select Experience</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="experienced">Experienced</option>
+
+                </select>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <!-- Account Security -->
+
+            <fieldset>
+
+                <legend>Account Security</legend>
+
+                <label for="password">Create Password:</label>
+
+                <input type="password" id="password"
+                name="password" required>
+
+                <br><br>
+
+                <label for="confirm-password">Confirm Password:</label>
+
+                <input type="password" id="confirm-password"
+                name="confirm-password" required>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <!-- Submit Button -->
+
+            <input type="submit" value="Create Account">
+
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+
+        <!-- Login Option -->
+
+        <p>
+            Already have an account?
+            <a href="login.html">Login Here</a>
+        </p>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 PeerPulse. All Rights Reserved.</p>
+
+        <p>Learn Together. Grow Together.</p>
+
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
