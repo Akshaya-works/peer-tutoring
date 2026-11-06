@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-
     <title>PeerPulse - Registration</title>
 
     <meta charset="UTF-8">
@@ -13,12 +11,10 @@
 </head>
 
 <body>
-
-    <!-- Navigation Bar -->
-
+        <!--nav site-->
     <header>
 
-        <h1>PeerPulse</h1>
+        <h1><b>PeerPulse</b></h1>
 
         <nav>
 
@@ -36,63 +32,65 @@
 
     </header>
 
+        <!--account info-->
 
-    <!-- Registration Section -->
-
-    <main>
-
-        <h1>Create Your Account</h1>
+        <h1><b>Create Your Account</b></h1>
 
         <p>
             Join PeerPulse and start learning or teaching
-            with fellow students.
+            the fellow students.
         </p>
 
 
         <form action="#" method="post">
 
-            <!-- Personal Information -->
 
             <fieldset>
 
                 <legend>Personal Information</legend>
 
+                <br><br>
+
+                <label for="profile">Upload your profile picture</label> 
+                <input id="profile" type="file" accept="image/*" name="picture">
+
+                <figure>
+                <figcaption><b>Profile Picture</b></figcaption>
+                <img id="display" src="profile_boy.png" alt="Profile picture" width="150px">
+                </figure>
+
+                <br><br>
+
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name"
-                placeholder="Enter your full name" required>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required>
 
                 <br><br>
 
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age"
-                min="13" max="100" required>
+                <input type="number" id="age" name="Age" min="13" max="30" required>
 
                 <br><br>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
-                placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <br><br>
 
                 <label for="mobile">Mobile Number:</label>
-                <input type="tel" id="mobile" name="mobile"
-                placeholder="Enter your mobile number" required>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
 
                 <br><br>
 
                 <label for="qualification">Current Qualification:</label>
+                <input id="qualification" type="text" list="qualify" name="qualification" 
+                placeholder="Enter your current qualification">
 
-                <select id="qualification" name="qualification">
-
-                    <option value="">Select Qualification</option>
-                    <option value="school">School Student</option>
-                    <option value="diploma">Diploma</option>
-                    <option value="undergraduate">Undergraduate</option>
-                    <option value="postgraduate">Postgraduate</option>
-                    <option value="other">Other</option>
-
-                </select>
+                <datalist id="qualify">
+                    <option value="School Student"></option>
+                    <option value="Undergraduate"></option>
+                    <option value="Postgraduate"></option>
+                    <option value="other"></option>
+                </datalist>
 
             </fieldset>
 
@@ -100,45 +98,81 @@
             <br>
 
 
-            <!-- Account Role -->
+            <!--role-->
 
             <fieldset>
 
                 <legend>Choose Your Role</legend>
 
-                <p>You can select one or both options.</p>
+                <p>Opt for the role in which you can excel.</p>
 
-                <input type="checkbox" id="student"
-                name="role" value="student">
+                <input type="radio" id="student" name="role" value="Student">
 
-                <label for="student">Student (I want to learn)</label>
+                <label for="student">Student</label>
 
                 <br><br>
 
-                <input type="checkbox" id="tutor"
-                name="role" value="tutor">
+                <input type="radio" id="tutor" name="role" value="Tutor">
 
-                <label for="tutor">Tutor (I want to teach)</label>
+                <label for="tutor">Tutor</label>
 
             </fieldset>
 
 
             <br>
 
+            <!--change the interface into one--> 
 
-            <!-- Learning Information -->
+            <!-- learning info -->
 
             <fieldset>
 
                 <legend>Learning Information</legend>
 
-                <label for="learning">Skills You Want to Learn:</label>
+                <br>
+
+                <label for="domain">Select the domain:</label>
 
                 <br><br>
 
-                <textarea id="learning" name="learning"
-                rows="4" cols="40"
-                placeholder="Example: Python, Web Development, Mathematics"></textarea>
+                <select id="domain" name="domains">
+                    <option value="data structures">Data Structures</option>
+                    <option value="DBMS">DBMS</option>
+                    <option value="frontend">Frontend Web Development</option>
+                    <option value="backend">Backend Web Development</option>
+                    <option value="design">UI/UX design</option>
+                    <option value="full stack">Full Stack Web Development</option>
+                    <option value="algorithms">Algorithms</option>
+                    <option value="programming language">Programming Language</option>
+                </select>
+                
+                <br><br>
+
+                <label for="learn">Skills You Want to Learn:</label>
+
+                <br><br>
+
+                <textarea id="learn" name="learning" rows="4" cols="30"
+                placeholder="Example: Python, SQL, Flask"></textarea>
+
+
+                <br><br>
+
+
+                <label for="method">Select your preferred way of learning:</label>
+
+                <br><br>
+
+                <select id="method" name="learning">
+                    <option value="project">Project-Based learning</option>
+                    <option value="concept">Concept-Based learning</option>
+                </select>
+                
+                <br><br>
+
+               <button type="submit"><b>Create the account</b></button>
+
+                <br>
 
             </fieldset>
 
@@ -152,17 +186,51 @@
 
                 <legend>Teaching Information</legend>
 
-                <label for="teaching">Skills You Can Teach:</label>
+                <br>
+
+                 <label for="domain">Select your teaching domain:</label>
+
+                 <br><br>
+
+                 <select id="domain" name="domains">
+                    <option value="data structures">Data Structures</option>
+                    <option value="DBMS">DBMS</option>
+                    <option value="frontend">Frontend Web Development</option>
+                    <option value="backend">Backend Web Development</option>
+                    <option value="design">UI/UX design</option>
+                    <option value="full stack">Full Stack Web Development</option>
+                    <option value="algorithms">Algorithms</option>
+                    <option value="programming language">Programming Language</option>
+                </select>
+                
+                <br><br>
+
+                <label for="learn">Skills You can Teach:</label>
 
                 <br><br>
 
-                <textarea id="teaching" name="teaching"
-                rows="4" cols="40"
-                placeholder="Example: C++, Python, Electronics, Mathematics"></textarea>
+                <textarea id="learn" name="learning" rows="4" cols="30"
+                placeholder="Example: Python, SQL, Flask"></textarea>
+
+
+                <br><br>
+
+
+                <label for="method">Select your preferred way of teaching:</label>
+
+                <br><br>
+
+                <select id="method" name="way">
+                    <option value="project">Project-Based learning</option>
+                    <option value="concept">Concept-Based learning</option>
+                </select>
+
 
                 <br><br>
 
                 <label for="experience">Teaching Experience:</label>
+
+                <br><br>
 
                 <select id="experience" name="experience">
 
@@ -173,67 +241,27 @@
 
                 </select>
 
-            </fieldset>
-
-
-            <br>
-
-
-            <!-- Account Security -->
-
-            <fieldset>
-
-                <legend>Account Security</legend>
-
-                <label for="password">Create Password:</label>
-
-                <input type="password" id="password"
-                name="password" required>
-
                 <br><br>
 
-                <label for="confirm-password">Confirm Password:</label>
+                   <button type="submit"><b>Create the account</b></button>
 
-                <input type="password" id="confirm-password"
-                name="confirm-password" required>
-
+                <br>
             </fieldset>
 
-
-            <br>
-
-
-            <!-- Submit Button -->
-
-            <input type="submit" value="Create Account">
-
-            <input type="reset" value="Clear Form">
-
         </form>
-
-
-        <!-- Login Option -->
-
-        <p>
-            Already have an account?
-            <a href="login.html">Login Here</a>
-        </p>
-
-    </main>
-
 
     <!-- Footer -->
 
     <footer>
 
-        <p>© 2026 PeerPulse. All Rights Reserved.</p>
-
-        <p>Learn Together. Grow Together.</p>
+        <p><i>© 2026 PeerPulse. All Rights Reserved.</i></p>
+        
+        <p><i>Learn Together. Grow Together.</i></p>
 
     </footer>
-    <script src="script.js"></script>
 
 
 </body>
 
 </html>
+
