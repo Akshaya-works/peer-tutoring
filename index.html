@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,7 @@
 
 <body class="home-page">
 
-    <!-- Header -->
+    <!--nav cite-->
     <header>
         <h1>PeerPulse</h1>
 
@@ -26,18 +25,18 @@
 
     <main>
 
-        <!-- Hero Section -->
+        <!--heading sec-->
         <section class="hero">
             <div class="hero-content">
                 <p class="hero-tag">STUDENT SKILL EXCHANGE PLATFORM</p>
 
-                <h2>Learn Together.<br>
-                    Teach Together.<br>
-                    <span>Grow Together.</span>
-                </h2>
-
+               <ul id="list">
+                <li><h2>Learn Together</h2></li>
+                <li><h2>Teach Together</h2></li>
+                <li><h2>Grow Together</h2></li>
+               </ul>
                 <p class="hero-description">
-                    PeerPulse is a student learning platform where students
+                    <b>PeerPulse</b> is a student learning platform where students
                     can teach their skills to others and learn something new
                     from their peers.
                 </p>
@@ -46,16 +45,23 @@
                     <a href="browse.html" class="primary-btn">Browse Tutors</a>
                     <a href="registration.html" class="secondary-btn">Join PeerPulse</a>
                 </div>
+
             </div>
         </section>
 
-        <!-- About Section -->
+        <!--About-->
         <section class="about-section">
             <p class="section-tag">ABOUT US</p>
             <h2>Learning is better <span>together.</span></h2>
+            <br>
+            <div id="video1">
+            <video preload="none" poster="peerpulse_image2_learning_together.png" width="450px" muted controls>
+                <source src="peerpulse_about.mp4" type="video/mp4">
+            Your browser does not support this video</video>
+            </div>
 
             <p>
-                PeerPulse provides a platform for students to exchange
+                <b>PeerPulse</b> provides a platform for students to exchange
                 knowledge and skills. Students can register as learners,
                 tutors, or both.
             </p>
@@ -64,45 +70,58 @@
                 Our aim is to make learning easier, more interactive and
                 accessible through peer-to-peer teaching.
             </p>
+
         </section>
+
 
         <!-- Explore Section -->
         <section class="explore-section">
             <p class="section-tag">GET STARTED</p>
             <h2>Explore PeerPulse</h2>
+            <figure id="img1">
+                <figcaption><h3>A place to thrive</h3></figcaption>
+             <img src="peerpulse_image1_banner.png" width="450px" alt="PeerPulse Picture">
+             </figure>
 
             <div class="quick-access">
 
-                <div class="access-card">
+                <article class="access-card">
                     <h3>Browse Tutors</h3>
                     <p>Find students who can teach you different subjects and skills.</p>
                     <a href="browse.html">Find Tutors →</a>
-                </div>
-
-                <div class="access-card">
+                </article>
+                  <br>
+                  <figure id="img2">
+                    <figcaption><h3>Proces flow of PeerPulse</h3></figcaption>
+                <img src="peerpulse_image3_features.png" width="450px" alt="PeerPulse Process">
+                </figure>
+                  <br>
+                <article class="access-card">
                     <h3>My Sessions</h3>
                     <p>Keep track of your learning and teaching sessions.</p>
                     <a href="sessions.html">View Sessions →</a>
-                </div>
+                </article>
 
-                <div class="access-card">
+                <article class="access-card">
                     <h3>Your Profile</h3>
                     <p>Manage your personal information and showcase your skills.</p>
                     <a href="profile.html">View Profile →</a>
+                </article>
                 </div>
+                </section>
 
-            </div>
-        </section>
-
+        
     </main>
+
 
     <!-- Footer -->
     <footer>
-        <h3>PeerPulse</h3>
-        <p>Learn Together. Teach Together. Grow Together.</p>
-        <p>© 2026 PeerPulse. All rights reserved.</p>
+         <p><i>© 2026 PeerPulse. All rights reserved.</i></p>
+
+        <p><i>Learn Together. Teach Together. Grow Together.</i></p>
+       
     </footer>
-    <script src="script.js"></script>
+
 
 
 </body>
