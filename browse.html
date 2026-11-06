@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +13,7 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!--nav site-->
 
     <header>
 
@@ -48,6 +47,10 @@
             from your fellow students.
         </p>
 
+        <blockquote>" The art of teaching is the art of assisting discovery. "</blockquote> 
+        
+        <p>Published in the book <cite>Liberal Education</cite> 
+        by <b>Mark Van Doren</b></p>
 
         <!-- Search Section -->
 
@@ -58,7 +61,7 @@
            
             <form id="tutorSearchForm">
 
-                <label for="searchInput">Search by Name or Skill:</label>
+                <label for="searchInput">Search by <ins>Name</ins> or <ins>Skill:</ins></label>
                 <input type="text" id="searchInput"
                     placeholder="e.g. Rahul, Python, HTML">
 
@@ -82,7 +85,6 @@
                 </select>
 
                 <button type="submit">Search Tutors</button>
-                <button type="reset">Clear Filters</button>
 
             </form>
 
@@ -91,7 +93,32 @@
 
 
         <hr>
+            <h2>Tutors and their curriculum</h2>
+        <section>
+            <p><strong>All our tutors are very well established in their curriculum.</strong> We have
+            also attached the link below to get to know our tutors anywhere, anytime.</p>
 
+            <a href="https://mentr.in/" target="_blank" rel="noopener">
+            Click to view our tutors online</a>
+        </section>
+
+        <hr>
+    
+                  <h2>Descriptions</h2>
+        <div>
+            <dl>
+                <dt><b>Peer Tutor:</b></dt>
+                <dd>A student who teaches other students</dd>
+
+                <dt><b>Session:</b><dt>
+                <dd>A booked tutorial slot</dd>
+
+                <dt><b>Verified Tutor:</b></dt>
+                <dd>A tutor whose marks are verified</dd>
+            </dl>
+        </div>
+
+        <hr>
 
         <!-- Tutor Profiles -->
 
@@ -112,7 +139,7 @@
 
                 <p>Teaching Domain: Programming</p>
 
-                <p>Skills: Python, C++, Basic Java</p>
+                <p>Skills: Python, C++, <del>Basic</del> Java</p>
 
                 <p>Experience: Intermediate</p>
 
@@ -212,6 +239,7 @@
 
     </main>
 
+     <hr>
 
     <!-- Footer -->
 
@@ -222,7 +250,6 @@
         <p>Learn Together. Grow Together.</p>
 
     </footer>
-    <script src="script.js"></script>
 
 
 </body>
