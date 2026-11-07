@@ -1,0 +1,181 @@
+
+/* =================================
+   LOGIN PAGE
+================================= */
+
+/* Login page body */
+
+body:not(.home-page) {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e7ff, #f5f3ff, #dbeafe);
+}
+
+/* Login header */
+
+body:not(.home-page) header {
+    background: linear-gradient(120deg, #312e81, #5146e5);
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+body:not(.home-page) header p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Login main section */
+
+body:not(.home-page) main {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Login card */
+
+body:not(.home-page) main section {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(49, 46, 129, 0.15);
+    text-align: center;
+    animation: slideUp 0.8s ease;
+}
+
+/* Login heading */
+
+body:not(.home-page) main section h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+body:not(.home-page) main section > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+
+body:not(.home-page) form {
+    text-align: left;
+}
+
+body:not(.home-page) form p {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+
+body:not(.home-page) label {
+    display: inline-block;
+    color: #172554;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input fields */
+
+body:not(.home-page) input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus pseudo class */
+
+body:not(.home-page) input:focus {
+    border-color: #5146e5;
+    box-shadow: 0 0 0 3px rgba(81, 70, 229, 0.12);
+}
+
+/* Buttons */
+
+body:not(.home-page) button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Login button */
+
+body:not(.home-page) button[type="submit"] {
+    background: #5146e5;
+    color: white;
+    margin-right: 8px;
+}
+
+body:not(.home-page) button[type="submit"]:hover {
+    background: #312e81;
+    transform: translateY(-3px);
+}
+
+/* Clear button */
+
+body:not(.home-page) button[type="reset"] {
+    background: #e2e8f0;
+    color: #172554;
+}
+
+body:not(.home-page) button[type="reset"]:hover {
+    background: #cbd5e1;
+}
+
+/* Registration link */
+
+body:not(.home-page) main section > p a {
+    color: #5146e5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+body:not(.home-page) main section > p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+body:not(.home-page) footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive login page */
+
+@media (max-width: 600px) {
+
+    body:not(.home-page) header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body:not(.home-page) nav {
+        justify-content: center;
+    }
+
+    body:not(.home-page) main section {
+        padding: 30px 22px;
+    }
+
+    body:not(.home-page) main section h2 {
+        font-size: 25px;
+    }
+}
