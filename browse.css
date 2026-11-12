@@ -1,81 +1,59 @@
 
-/* =================================
-   PEERPULSE - MAIN CSS
-================================= */
 
-/* 1. Global Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f7fc;
     color: #263247;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-/* 2. Navigation Bar */
 header {
-    background-color: #ffffff;
-    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: white;
+    padding: 15px 40px;
+    border-bottom: 1px solid #dce4f0;
 }
 
 header h1 {
     color: #2563eb;
     font-size: 30px;
-    font-weight: 800;
-}
-
-nav {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
 }
 
 nav a {
     color: #263247;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 nav a:hover {
     color: #2563eb;
 }
 
-/* 3. Main Hero Section */
 main {
-    max-width: 1150px;
-    margin: auto;
-    padding: 45px 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
 main > h1 {
     text-align: center;
-    font-size: 42px;
+    font-size: 36px;
     color: #173b78;
-    margin-top: 25px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 main > p {
     text-align: center;
     color: #64748b;
-    font-size: 17px;
 }
 
 blockquote {
@@ -83,228 +61,128 @@ blockquote {
     font-size: 20px;
     font-style: italic;
     color: #2563eb;
-    margin: 25px auto 10px;
+    margin: 20px 0 10px;
 }
 
 cite {
     color: #2563eb;
 }
 
-/* 4. Section Headings */
 section {
-    margin: 35px 0;
+    margin: 30px 0;
 }
 
-section h2,
-main > h2 {
+h2 {
     color: #173b78;
-    font-size: 25px;
-    margin-bottom: 18px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 hr {
     border: none;
     height: 1px;
     background-color: #dce4f0;
-    margin: 35px 0;
+    margin: 30px 0;
 }
 
-/* 5. Search Form */
-#tutorSearchForm {
+form {
     background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 20px;
+    padding: 25px;
+    border: 1px solid #dce4f0;
+    border-radius: 10px;
 }
 
-#tutorSearchForm label {
-    font-weight: 600;
-    color: #334155;
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 
-#tutorSearchForm input,
-#tutorSearchForm select {
+form input,
+form select {
     width: 100%;
-    padding: 13px;
+    padding: 10px;
     border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 15px;
-    background-color: #f8fafc;
-    outline: none;
-    transition: 0.3s;
 }
-
-#tutorSearchForm input:focus,
-#tutorSearchForm select:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 5px rgba(37,99,235,0.2);
-}
-
-/* 6. Buttons */
 button {
     background-color: #2563eb;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-size: 15px;
-    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
     background-color: #173b78;
-    transform: translateY(-2px);
 }
 
-#tutorSearchForm button {
-    grid-column: 1 / -1;
-    margin-top: 10px;
+form button {
+    margin-top: 20px;
 }
-
-/* 7. Tutor Information Link */
-main section a {
+main a {
     color: #2563eb;
-    font-weight: 600;
+    font-weight: bold;
     text-decoration: none;
 }
 
-main section a:hover {
+main a:hover {
     text-decoration: underline;
 }
-
-/* 8. Description Section */
 dl {
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    border: 1px solid #dce4f0;
+    border-radius: 10px;
 }
 
 dt {
     color: #2563eb;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 dd {
     color: #64748b;
     margin-left: 15px;
 }
-
-/* 9. Tutor Profile Cards */
 article {
     background-color: white;
-    padding: 25px;
+    padding: 20px;
     margin: 20px 0;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    border: 1px solid #dce4f0;
     border-left: 5px solid #2563eb;
-    transition: 0.3s;
-}
-
-article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(37,99,235,0.12);
+    border-radius: 10px;
 }
 
 article h3 {
     color: #173b78;
-    font-size: 22px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 article p {
-    margin: 6px 0;
     color: #475569;
+    margin: 5px 0;
 }
 
 article a {
     display: inline-block;
     margin-top: 15px;
     margin-right: 12px;
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: none;
 }
 
-article a:hover {
-    text-decoration: underline;
-}
-
-/* 10. Footer */
 footer {
     background-color: #142b50;
     color: white;
     text-align: center;
-    padding: 28px 15px;
-    margin-top: 40px;
+    padding: 25px 15px;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 5px;
-}
-
-/* 11. Animations */
-article {
-    animation: fadeIn 0.7s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 12. Responsive Design */
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav {
-        justify-content: center;
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    main > h1 {
-        font-size: 30px;
-    }
-
-    #tutorSearchForm {
-        grid-template-columns: 1fr;
-    }
-
-    #tutorSearchForm button {
-        grid-column: auto;
-    }
-
-    article {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding: 25px 15px;
-    }
 }
