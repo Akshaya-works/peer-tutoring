@@ -1,0 +1,357 @@
+
+/* =========================================
+   PEERPULSE - MY PROFILE PAGE
+========================================= */
+
+/* Profile page background */
+
+body:not(.home-page) {
+    background: #f1f5ff;
+    color: #475569;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header */
+
+body:has(#img3) header {
+    background: linear-gradient(120deg, #312e81, #5146e5);
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body:has(#img3) header h1 {
+    color: white;
+    font-size: 30px;
+}
+
+body:has(#img3) nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+body:has(#img3) nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+body:has(#img3) nav a:hover {
+    color: #facc15;
+}
+
+/* Main section */
+
+body:has(#img3) main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* Profile page heading */
+
+body:has(#img3) dl {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+body:has(#img3) dl h1 {
+    color: #172554;
+    font-size: 38px;
+}
+
+body:has(#img3) dl h3 {
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Profile information card */
+
+body:has(#img3) main > section:first-of-type {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Profile image */
+
+#img3 {
+    margin: 10px auto 25px;
+    text-align: center;
+}
+
+#img3 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #5146e5;
+    box-shadow: 0 5px 15px rgba(81,70,229,0.2);
+}
+
+#img3 figcaption {
+    color: #5146e5;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* Student details */
+
+body:has(#img3) main > section:first-of-type > p {
+    max-width: 500px;
+    margin: 12px auto;
+    padding: 12px 15px;
+    text-align: left;
+    background: #f8faff;
+    border-radius: 8px;
+    border-left: 4px solid #5146e5;
+}
+
+body:has(#img3) main > section:first-of-type b {
+    color: #172554;
+}
+
+/* Buttons */
+
+body:has(#img3) button {
+    background: #5146e5;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body:has(#img3) button:hover {
+    background: #312e81;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(81,70,229,0.2);
+}
+
+/* Learning information */
+
+body:has(#img3) main > section:nth-of-type(2) {
+    background: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+body:has(#img3) main > section:nth-of-type(2) h2 {
+    color: #172554;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+body:has(#img3) main > section:nth-of-type(2) h3 {
+    color: #5146e5;
+    margin-bottom: 12px;
+}
+
+body:has(#img3) main > section:nth-of-type(2) ul {
+    padding-left: 25px;
+}
+
+body:has(#img3) main > section:nth-of-type(2) li {
+    padding: 8px;
+    margin: 7px 0;
+    background: #f1f5ff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+body:has(#img3) main > section:nth-of-type(2) li:hover {
+    background: #e0e7ff;
+    padding-left: 15px;
+}
+
+/* Horizontal line */
+
+body:has(#img3) hr {
+    border: none;
+    border-top: 1px solid #cbd5e1;
+    margin: 30px 0;
+}
+
+/* Availability table */
+
+body:has(#img3) table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    margin: 20px auto;
+}
+
+body:has(#img3) caption {
+    color: #172554;
+    padding: 15px;
+}
+
+body:has(#img3) th {
+    background: #5146e5;
+    color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+body:has(#img3) td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+body:has(#img3) tbody tr:nth-child(even) {
+    background: #f1f5ff;
+}
+
+body:has(#img3) tbody tr:hover {
+    background: #e0e7ff;
+}
+
+/* Questions and Answers */
+
+#my-questions {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+#my-questions h2 {
+    color: #172554;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+#my-questions > p {
+    margin-bottom: 25px;
+    color: #64748b;
+}
+
+#my-questions details {
+    background: #f8faff;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #5146e5;
+    transition: 0.3s;
+}
+
+#my-questions details:hover {
+    background: #eef2ff;
+}
+
+#my-questions summary {
+    color: #312e81;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#my-questions summary:hover {
+    color: #756cf5;
+}
+
+#my-questions details[open] {
+    background: #eef2ff;
+}
+
+#my-questions details h4 {
+    color: #5146e5;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+#my-questions details p {
+    line-height: 1.8;
+}
+
+/* Footer */
+
+body:has(#img3) footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    body:has(#img3) header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body:has(#img3) nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    body:has(#img3) main {
+        padding: 25px 15px;
+    }
+
+    body:has(#img3) dl h1 {
+        font-size: 30px;
+    }
+
+    body:has(#img3) main > section:first-of-type {
+        padding: 25px 15px;
+    }
+
+    body:has(#img3) table {
+        font-size: 13px;
+    }
+
+    body:has(#img3) th,
+    body:has(#img3) td {
+        padding: 9px 5px;
+    }
+
+    #my-questions {
+        padding: 22px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body:has(#img3) nav a {
+        font-size: 13px;
+    }
+
+    body:has(#img3) table {
+        font-size: 11px;
+    }
+
+    #img3 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    body:has(#img3) button {
+        width: 100%;
+    }
+}

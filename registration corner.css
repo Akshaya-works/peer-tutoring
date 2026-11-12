@@ -1,0 +1,293 @@
+
+/* =========================================
+   PEERPULSE - REGISTRATION PAGE
+========================================= */
+
+/* Registration page background */
+
+body:has(form fieldset) {
+    background: #f1f5ff;
+    color: #475569;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header */
+
+body:has(form fieldset) header {
+    background: linear-gradient(120deg, #312e81, #5146e5);
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body:has(form fieldset) header h1 {
+    color: white;
+    font-size: 30px;
+}
+
+body:has(form fieldset) nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+body:has(form fieldset) nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+body:has(form fieldset) nav a:hover {
+    color: #facc15;
+}
+
+/* Registration heading */
+
+body:has(form fieldset) > h1 {
+    text-align: center;
+    color: #172554;
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+body:has(form fieldset) > p {
+    text-align: center;
+    color: #64748b;
+    font-size: 16px;
+    margin: 10px 15px 30px;
+}
+
+/* Registration form */
+
+body:has(form fieldset) form {
+    max-width: 850px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+}
+
+/* Fieldset cards */
+
+body:has(form fieldset) fieldset {
+    background: white;
+    border: 1px solid #dbe3f0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+body:has(form fieldset) fieldset:hover {
+    box-shadow: 0 8px 25px rgba(81,70,229,0.12);
+}
+
+/* Legends */
+
+body:has(form fieldset) legend {
+    background: #5146e5;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Labels */
+
+body:has(form fieldset) label {
+    display: inline-block;
+    color: #172554;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Text, email, number, tel and file inputs */
+
+body:has(form fieldset) input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #f8faff;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+
+body:has(form fieldset) input:focus,
+body:has(form fieldset) select:focus,
+body:has(form fieldset) textarea:focus {
+    outline: none;
+    border-color: #5146e5;
+    box-shadow: 0 0 0 3px rgba(81,70,229,0.12);
+    background: white;
+}
+
+/* File upload */
+
+body:has(form fieldset) input[type="file"] {
+    cursor: pointer;
+}
+
+/* Profile picture */
+
+body:has(form fieldset) figure {
+    text-align: center;
+    margin: 20px auto;
+}
+
+body:has(form fieldset) figure figcaption {
+    color: #5146e5;
+    margin-bottom: 12px;
+}
+
+body:has(form fieldset) #display {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #5146e5;
+    box-shadow: 0 5px 15px rgba(81,70,229,0.2);
+}
+
+/* Select dropdown */
+
+body:has(form fieldset) select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f8faff;
+    color: #475569;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Textarea */
+
+body:has(form fieldset) textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    background: #f8faff;
+    transition: 0.3s ease;
+}
+
+/* Radio buttons */
+
+body:has(form fieldset) input[type="radio"] {
+    accent-color: #5146e5;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+body:has(form fieldset) input[type="radio"] + label {
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+/* Buttons */
+
+body:has(form fieldset) button {
+    background: #5146e5;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body:has(form fieldset) button:hover {
+    background: #312e81;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(81,70,229,0.2);
+}
+
+/* Required fields */
+
+body:has(form fieldset) input:required:focus {
+    border-color: #5146e5;
+}
+
+/* Footer */
+
+body:has(form fieldset) footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+body:has(form fieldset) footer p {
+    margin: 5px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    body:has(form fieldset) header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body:has(form fieldset) nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    body:has(form fieldset) > h1 {
+        font-size: 29px;
+    }
+
+    body:has(form fieldset) form {
+        padding: 0 15px;
+    }
+
+    body:has(form fieldset) fieldset {
+        padding: 22px 17px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body:has(form fieldset) nav a {
+        font-size: 13px;
+    }
+
+    body:has(form fieldset) fieldset {
+        padding: 20px 14px;
+    }
+
+    body:has(form fieldset) legend {
+        font-size: 15px;
+    }
+
+    body:has(form fieldset) button {
+        width: 100%;
+    }
+
+    body:has(form fieldset) #display {
+        width: 120px;
+        height: 120px;
+    }
+}
