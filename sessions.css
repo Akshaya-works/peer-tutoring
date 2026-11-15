@@ -41,8 +41,8 @@ header {
 }
 
 header h1 {
+    color:#ffffff;
     font-size: 30px;
-    letter-spacing: 1px;
     font-weight:800;
 }
 
